@@ -1,24 +1,34 @@
 import React from "react";
-
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+import "./../../styles/index.css";
 
 //create your first component
-const Home = () => {
+const Home = (props) => {
+	let  numbers = props.time.toString();
 	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div className="d-flex justify-content-center shadow-lg p-3 mb-5 bg-body rounded">
+			<div className="num">
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch-fill" viewBox="0 0 16 16">
+  <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584l.013-.012.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354-.012.012A6.97 6.97 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0"/>
+</svg>
+			</div>
+			<div className="num">
+				{ numbers[ numbers.length -6] ?  numbers[ numbers.length -6] : "0"}
+			</div>
+			<div className="num">
+				{ numbers[ numbers.length -5] ?  numbers[ numbers.length -5] : "0"}
+			</div>
+			<div className="num">
+				{ numbers[ numbers.length -4] ?  numbers[ numbers.length -4] : "0"}
+			</div>
+			<div className="num">
+				{ numbers[ numbers.length -3] ?  numbers[ numbers.length -3] : "0"}
+			</div>
+			<div className="num">
+				{ numbers[ numbers.length -2] ?  numbers[ numbers.length -2] : "0"}
+			</div>
+			<div className="num">
+				{ numbers[ numbers.length -1] ?  numbers[ numbers.length -1] : "0"}
+			</div>
 		</div>
 	);
 };

@@ -1,12 +1,17 @@
 
-/* 
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.num {
+    font-size: xx-large;
+    border: 1px solid rgba(0, 0, 0, 0.957);
+    border-radius: 6px;
+    width: 333px;
+    text-align: center;
+    text-shadow: 2px 1px #49003e;
+    font-family: Papyrus;
+    box-shadow: rgb(153, 59, 153) 15px 15px 15px -3px;
+    background-color: rgb(59, 46, 120);
+}
 
-*/
+body {
+    color: #ffffff;
+}
